@@ -21,6 +21,27 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.napoleon",
+    "sphinx_multiversion",
+]
+
+templates_path = [
+    "_templates",
+]
+html_sidebars = {
+    "**": [
+        "sidebar/brand.html",
+        "sidebar/search.html",
+        "sidebar/scroll-start.html",
+        "sidebar/navigation.html",
+        "sidebar/versions.html",
+        "sidebar/scroll-end.html",
+    ],
+}
+
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
